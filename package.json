@@ -1,0 +1,16 @@
+{
+  "name": "coconutradio_backend",
+  "version": "1.0.0",
+  "description": "radio kackend",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "HannahYoo",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0"
+  }
+}
