@@ -7,12 +7,9 @@ module.exports = {
     //通过一个middleware给ctx添加一个rest()方法，直接输出JSON数据。统一处理restful api
     restify: (pathPrefix) => {
         pathPrefix = pathPrefix || '/api/';
-        console.log(111)
         return async (ctx, next) => {
-            console.log(ctx.request.path,pathPrefix)
             if (ctx.request.path.startsWith(pathPrefix)) {
                 // 绑定rest()方法:
-
                 ctx.rest = (data) => {
                     ctx.response.type = 'application/json';
                     ctx.response.body = data;
