@@ -21,5 +21,5 @@ app.use(rest.restify());
 // add controllers:
 app.use(controller());
 // 在端口3000监听:
-app.listen(8080);
-console.log('app started at port 8080...');
+app.listen(80);
+console.log('app started at port 80...');
