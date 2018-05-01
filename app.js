@@ -7,8 +7,12 @@ const rest = require('./rest');
 const fs = require('fs');
 const https = require('https');
 const http = require('http');
+var enforceHttps = require('koa-sslify');
 
 const app = new Koa();
+
+app.use(enforceHttps());
+
 
 var options = {
     key: fs.readFileSync('./ssl/214645895910665.key'),
